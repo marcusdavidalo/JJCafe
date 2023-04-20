@@ -14,39 +14,12 @@
   </head>
   <body>
     <div class="container">
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" id="navbar" role="tablist">
-        <li class="nav-item">
-          <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Active</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#tab2Id">Action</a>
-            <a class="dropdown-item" href="#tab3Id">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#tab4Id">Action</a>
+      <nav class="navbar navbar-expand navbar-light bg-light">
+          <div class="nav navbar-nav">
+              <a class="nav-item nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Home</a>
           </div>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a href="#tab5Id" class="nav-link" data-bs-toggle="tab">Another link</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a href="#" class="nav-link disabled" data-bs-toggle="tab">Disabled</a>
-        </li>
-      </ul>
-      
-      <!-- Tab panes -->
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-      </div>
-      
-      <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
-      
+      </nav>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
@@ -55,9 +28,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-      <script>
-        var triggerEl = document.querySelector('#navbar a')
-        bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
-      </script>
   </body>
 </html>
