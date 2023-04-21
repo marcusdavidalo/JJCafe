@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="./css/utilities.css">
     <title>Document</title>
+    <link
+      rel="canonical"
+      href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
   <body>
     <header>
@@ -35,19 +34,21 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Link 1</a>
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
+                <a class="nav-link" href="#">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link 3</a>
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </nav>
-      </div>
-      <div id="slider1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+      <div id="slider1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="20000">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -59,32 +60,32 @@
             <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner" style="height: 60vh; display: flex; align-items: center;">
+          <div class="carousel-inner carousel-fade d-flex align-items-center">
             <div class="carousel-item active">
               <img src="./img/index/cyril-saulnier-coffee-unsplash.jpg" class="d-block w-100" alt="">
-              <div class="carousel-caption d-md-block">
-                <h5>Coffee</h5>
+              <div class="carousel-caption px-5">
+                <h1>Coffee</h1>
                 <p>A warm and delicious way to start your day</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary btn-maxwidth">Learn More</a>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./img/index/nathan-dumlao-coffeecircle-unsplash.jpg" class="d-block w-100" alt="">
-              <div class="carousel-caption d-md-block">
-                <h5>Coffee Circle</h5>
+              <div class="carousel-caption"px-5>
+                <h1>Coffee Circle</h1>
                 <p>A symbol of unity and community</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary btn-maxwidth">Learn More</a>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./img/index/nathan-dumlao-coffeecheers-unsplash.jpg" class="d-block w-100" alt="">
-              <div class="carousel-caption d-md-block">
-                <h5>Cheers to Coffee</h5>
+              <div class="carousel-caption"px-5>
+                <h1>Cheers to Coffee</h1>
                 <p>Celebrate your love for coffee with friends</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary btn-maxwidth">Learn More</a>
               </div>
             </div>
-          </div>
+          </div>      
           <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
