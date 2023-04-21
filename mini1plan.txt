@@ -1,0 +1,68 @@
+##COFFEE##
+
+||INDEX||
+
+=Navbar=
+- Home
+- About
+- Menu
+- Location
+
+=Main=
+- Products Carousell 3x w/Order Button
+- About
+- Testimonials
+- Features
+- Gallery
+
+=Footer=
+- Jobs
+- Email Signup
+
+||ABOUT||
+
+=Navbar=
+- Home
+- About
+- Menu
+- Location
+
+=Main=
+- Shop Carousell 3x w/Join Us Button
+- About Mission, Vision, & Values
+- Drinks About
+
+=Footer=
+- Jobs
+- Email Signup
+
+||MENU||
+
+=Navbar=
+- Home
+- About
+- Menu
+- Location
+
+=Main=
+- Menu Products In Masonry
+- Order Now Button
+
+=Footer=
+- Jobs
+- Email Signup
+
+||LOCATION||
+
+=Navbar=
+- Home
+- About
+- Menu
+- Location
+
+=Main=
+- 4 Locations
+
+=Footer=
+- Jobs
+- Email Signup
