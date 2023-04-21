@@ -6,6 +6,7 @@
 
 body {
   background-color: #d8c0a9;
+  height: 2000px;
 }
 
 /* .container {
@@ -33,6 +34,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.dark-brown {
+  background: #5d3c1e;
 }
 
 .btn-maxwidth {
