@@ -1,5 +1,18 @@
-.new-image {
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+.feat-prods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  background-color: #d8c0a9 !important;
+}
+
+@media (max-width: 768px) {
+  .feat-prods {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .feat-prods {
+    grid-template-columns: 1fr;
+  }
 }

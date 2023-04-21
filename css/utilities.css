@@ -1,6 +1,16 @@
-.container {
-  max-width: 1100px !important;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #d8c0a9;
+}
+
+/* .container {
+  max-width: 1100px !important;
+} */
 
 .carousel-item {
   position: relative;
