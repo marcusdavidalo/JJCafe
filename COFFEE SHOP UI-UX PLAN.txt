@@ -1,3 +1,10 @@
+##COLOR PALETTE##
+
+Dark brown: #5D3C1E
+Dark grey: #444444
+Beige: #D8C0A9
+Cream: #F7F7F7
+Rust orange: #D96B47
 
 ##INDEX.HTML UI/UX PLAN##
 
