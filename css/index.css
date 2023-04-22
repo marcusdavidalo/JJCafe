@@ -5,6 +5,34 @@
   background-color: #d8c0a9 !important;
 }
 
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(6);
+  grid-template-rows: repeat(1);
+  grid-template-areas:
+    "cell1 cell1 cell1 cell1 cell2 cell2"
+    "cell3 cell3 cell4 cell4 cell5 cell5"
+    "cell6 cell6 cell7 cell7 cell7 cell7";
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.cell1 {
+  grid-area: cell1;
+}
+.cell2 {
+  grid-area: cell2;
+}
+.cell3 {
+  grid-area: cell3;
+}
+.cell4 {
+  grid-area: cell4;
+}
+.cell5 {
+  grid-area: cell5;
+}
+
 @media (max-width: 768px) {
   .feat-prods {
     grid-template-columns: repeat(2, 1fr);
