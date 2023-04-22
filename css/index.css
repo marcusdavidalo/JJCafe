@@ -39,3 +39,9 @@
 #slider1 {
   height: 100%;
 }
+
+.carousel-item img {
+  filter: blur(1.5px);
+  opacity: 0.85;
+  background-color: #523a28;
+}

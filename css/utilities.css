@@ -61,12 +61,6 @@ header {
   position: relative;
 }
 
-.carousel-item img {
-  filter: blur(1.5px);
-  opacity: 0.85;
-  background-color: #523a28;
-}
-
 a:hover {
   color: #d96b47 !important;
 }
