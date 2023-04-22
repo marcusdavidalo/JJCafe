@@ -21,16 +21,16 @@
   border-radius: 0.4rem !important;
 }
 
-.img-fit {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-}
-
 .features-icon {
   background: #f7f7f7;
   border: #f3f3f3 solid 0.5rem;
   border-radius: 0.5rem;
+}
+
+.carousel-item img {
+  filter: blur(1.5px);
+  opacity: 0.85;
+  background-color: #523a28;
 }
 
 .carousel-item,
@@ -78,10 +78,4 @@
   100% {
     transform: translate(0, 0);
   }
-}
-
-.carousel-item img {
-  filter: blur(1.5px);
-  opacity: 0.85;
-  background-color: #523a28;
 }

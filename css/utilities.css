@@ -68,14 +68,14 @@ a:hover {
   background-color: #f7f7f7;
 }
 
-.carousel-item {
-  position: relative;
+.img-fit {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }
 
-.carousel-item img {
-  filter: blur(2px);
-  opacity: 0.5;
-  background-color: #523a28;
+.carousel-item {
+  position: relative;
 }
 
 a:hover {
