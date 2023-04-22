@@ -6,6 +6,11 @@ Beige: #D8C0A9
 Cream: #F7F7F7
 Rust orange: #D96B47
 
+#58626c
+#dac8be
+#ecc1a1
+#f5f1ee
+
 ##INDEX.HTML UI/UX PLAN##
 
 Header:
