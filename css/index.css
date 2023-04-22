@@ -5,14 +5,37 @@
   background-color: #d8c0a9 !important;
 }
 
-@media (max-width: 768px) {
-  .feat-prods {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.features {
+  border: none !important;
 }
 
-@media (max-width: 576px) {
-  .feat-prods {
-    grid-template-columns: 1fr;
-  }
+.card {
+  border: none !important;
+  --bs-card-spacer-y: 0.75rem !important;
+  --bs-card-spacer-x: 0.75rem !important;
+  --bs-card-border-color: none !important;
+}
+
+.card-body {
+  min-height: 26rem;
+  border: none !important;
+  border-radius: 0.4rem !important;
+}
+
+.img-fit {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.features-icon {
+  background: #f7f7f7;
+  border: #f3f3f3 solid 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.carousel-item,
+.carousel-inner,
+#slider1 {
+  height: 100%;
 }
