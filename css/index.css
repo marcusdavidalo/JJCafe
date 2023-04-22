@@ -22,12 +22,6 @@
   border-radius: 0.4rem !important;
 }
 
-.img-fit {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-}
-
 .features-icon {
   background: #f7f7f7;
   border: #f3f3f3 solid 0.5rem;

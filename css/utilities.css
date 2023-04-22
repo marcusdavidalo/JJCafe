@@ -57,6 +57,12 @@ a:hover {
   background-color: #f7f7f7;
 }
 
+.img-fit {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
 .carousel-item {
   position: relative;
 }
