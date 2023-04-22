@@ -28,6 +28,12 @@
   border-radius: 0.5rem;
 }
 
+.carousel-item img {
+  filter: blur(1.5px);
+  opacity: 0.85;
+  background-color: #523a28;
+}
+
 .carousel-item,
 .carousel-inner,
 #slider1 {
@@ -73,10 +79,4 @@
   100% {
     transform: translate(0, 0);
   }
-}
-
-.carousel-item img {
-  filter: blur(1.5px);
-  opacity: 0.85;
-  background-color: #523a28;
 }
