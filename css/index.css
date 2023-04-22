@@ -5,42 +5,37 @@
   background-color: #d8c0a9 !important;
 }
 
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(6);
-  grid-template-rows: repeat(1);
-  grid-template-areas:
-    "cell1 cell1 cell1 cell1 cell2 cell2"
-    "cell3 cell3 cell4 cell4 cell5 cell5"
-    "cell6 cell6 cell7 cell7 cell7 cell7";
-  gap: 2rem;
-  overflow: hidden;
+.features {
+  border: none !important;
 }
 
-.cell1 {
-  grid-area: cell1;
-}
-.cell2 {
-  grid-area: cell2;
-}
-.cell3 {
-  grid-area: cell3;
-}
-.cell4 {
-  grid-area: cell4;
-}
-.cell5 {
-  grid-area: cell5;
+.card {
+  border: none !important;
+  --bs-card-spacer-y: 0.75rem !important;
+  --bs-card-spacer-x: 0.75rem !important;
+  --bs-card-border-color: none !important;
 }
 
-@media (max-width: 768px) {
-  .feat-prods {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.card-body {
+  min-height: 26rem;
+  border: none !important;
+  border-radius: 0.4rem !important;
 }
 
-@media (max-width: 576px) {
-  .feat-prods {
-    grid-template-columns: 1fr;
-  }
+.img-fit {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.features-icon {
+  background: #f7f7f7;
+  border: #f3f3f3 solid 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.carousel-item,
+.carousel-inner,
+#slider1 {
+  height: 100%;
 }
