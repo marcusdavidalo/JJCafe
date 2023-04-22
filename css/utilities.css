@@ -44,13 +44,13 @@ header {
   opacity: none !important;
 }
 
+a:hover {
+  color: #d96b47 !important;
+}
+
 .btn-primary:hover {
   background-color: #d15536 !important;
   color: #fff !important;
-}
-
-#hero {
-  background-color: #5d3c1e;
 }
 
 #features {
@@ -59,6 +59,12 @@ header {
 
 .carousel-item {
   position: relative;
+}
+
+.carousel-item img {
+  filter: blur(2px);
+  opacity: 0.5;
+  background-color: #523a28;
 }
 
 a:hover {
