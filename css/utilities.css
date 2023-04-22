@@ -65,6 +65,8 @@ a:hover {
   filter: blur(2px);
   opacity: 0.5;
   background-color: #523a28;
+}
+
 a:hover {
   color: #d96b47 !important;
 }
