@@ -39,3 +39,44 @@
 #slider1 {
   height: 100%;
 }
+
+.fa-shopping-cart:hover {
+  animation: shake 0.75s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(2px, 0);
+  }
+  20% {
+    transform: translate(5px, 0);
+  }
+  30% {
+    transform: translate(10px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(22px, 0);
+  }
+  60% {
+    transform: translate(20px, 0);
+  }
+  70% {
+    transform: translate(22px, 0);
+  }
+  80% {
+    transform: translate(10, 0);
+  }
+  90% {
+    transform: translate(5px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
