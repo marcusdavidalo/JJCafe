@@ -5,6 +5,17 @@
   font-family: sans-serif;
 }
 
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d8c0a9;
+  z-index: 9999;
+  display: none;
+}
+
 body {
   background-color: #d8c0a9;
   /* height: 2000px; */
@@ -19,7 +30,7 @@ header {
 }
 
 .bg-darkbrown {
-  background: #5d3c1e !important;
+  background: #86582c !important;
 }
 .bg-grey {
   background: #444 !important;
