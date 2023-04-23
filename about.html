@@ -4,26 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/utilities.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <title>Document</title>
-    <link
-      rel="canonical"
-      href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/"
-    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="icon" type="image/png" href="./img/coffee-beans.png" />
+    <title>About</title>
   </head>
   <body>
+    <!-- ########## NAVIGATION ########## -->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg bg-beige">
         <div class="container">
-          <a class="navbar-brand" href="#">LOGO</a>
+          <a class="navbar-brand" href="#"
+            ><img src="./img/pngwing.com.png" alt="Logo" style="width: 50px"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -40,13 +47,13 @@
             id="navbarNav"
           >
             <ul class="navbar-nav">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Menu</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
@@ -56,130 +63,253 @@
           </div>
         </div>
       </nav>
-      <!-- Carosel Showcase -->
-      <div
-        id="slider1"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="20000"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#slider1"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#slider1"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#slider1"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div id="slider1" class="carousel slide" data-bs-ride="carousel">
+    </header>
+    <!-- ########## MAIN ########## -->
+    <main class="bg-white" id="slider1">
+      <div class="container">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
           <div class="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#slider1"
+              data-bs-target="#demo"
               data-bs-slide-to="0"
               class="active"
-              aria-current="true"
-              aria-label="Slide 1"
             ></button>
             <button
               type="button"
-              data-bs-target="#slider1"
+              data-bs-target="#demo"
               data-bs-slide-to="1"
-              aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#slider1"
+              data-bs-target="#demo"
               data-bs-slide-to="2"
-              aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner carousel-fade d-flex align-items-center">
-            <!-- Carousel Item 1 -->
+
+          <!-- Slideshow / Carousel -->
+          <div class="carousel-inner carousel-fade d-flex">
             <div class="carousel-item active">
               <img
-                src="./img/index/cyril-saulnier-coffee-unsplash.jpg"
-                class="d-block w-100"
-                alt=""
+                src="./img/about/james-kovin-d9fLowIQxjs-unsplash.jpg"
+                class="img-fit"
+                alt="about-us"
               />
-              <div class="carousel-caption px-5">
-                <h1>Coffee</h1>
-                <p>A warm and delicious way to start your day</p>
-                <a href="#" class="btn btn-primary btn-maxwidth">Learn More</a>
-              </div>
             </div>
-            <!-- Carousel Item 2 -->
             <div class="carousel-item">
               <img
-                src="./img/index/nathan-dumlao-coffeecircle-unsplash.jpg"
-                class="d-block w-100"
-                alt=""
+                src="./img/about/pexels-afta-putta-gunawan-683039.jpg"
+                class="img-fit"
+                alt="about-us"
               />
-              <div class="carousel-caption" px-5>
-                <h1>Coffee Circle</h1>
-                <p>A symbol of unity and community</p>
-                <a href="#" class="btn btn-primary btn-maxwidth">Learn More</a>
+            </div>
+            <div class="carousel-item img-fit">
+              <img
+                src="./img/about/pexels-jason-villanueva-851555.jpg"
+                class="img-fit"
+                alt="about-us"
+              />
+            </div>
+          </div>
+          <!-- Left and Right Controls / Icons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- ########## MISSION VISION CORE VALUES ########## -->
+    <section id="mission-vision" class="py-5 bg-white">
+      <!-- MISSION -->
+      <div class="container">
+        <div class="card mb-3">
+          <div class="row g-0 py-3 bg-darkbrown bg-w">
+            <div class="col-md-4 text-center mvc-icon">
+              <i class="fa fa-bullseye fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Mission</h5>
+                <p class="card-text">
+                  To serve delicious and authentic coffee flavors from around
+                  the world, while creating a cozy and friendly atmosphere for
+                  our customers.
+                </p>
               </div>
             </div>
-            <!-- Carousel Item 3 -->
-            <div class="carousel-item">
-              <img
-                src="./img/index/nathan-dumlao-coffeecheers-unsplash.jpg"
-                class="d-block w-100"
-                alt=""
-              />
-              <div class="carousel-caption" px-5>
-                <h1>Cheers to Coffee</h1>
-                <p>Celebrate your love for coffee with friends</p>
-                <a href="#" class="btn btn-primary btn-maxwidth">Learn More</a>
+          </div>
+        </div>
+        <!-- VISION -->
+        <div class="card mb-3">
+          <div class="row g-0 py-3 bg-darkbrown bg-w">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Vision</h5>
+                <p class="card-text">
+                  To become a leading coffee destination in our community, and
+                  to support ethical and sustainable practices in the coffee
+                  industry.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mvc-icon">
+              <i class="fa-solid fa-eye fa-5x"></i>
+            </div>
+          </div>
+        </div>
+        <!-- CORE VALUES -->
+        <div class="card mb-3">
+          <div class="row g-0 py-3 bg-darkbrown bg-w">
+            <div class="col-md-4 text-center mvc-icon core-value">
+              <i class="fa-solid fa-hand-holding-heart fa-5x"></i>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body core-value">
+                <h5 class="card-title">Core Values</h5>
+                <div class="card-text">
+                  <p><i class="fa fa-check" aria-hidden="true"></i> Quality</p>
+                  <p><i class="fa fa-check" aria-hidden="true"></i> Service</p>
+                  <p>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    Sustainability
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- ########## ABOUT ########## -->
-    <main></main>
+    </section>
 
-    <!-- Footer -->
-    <footer class="bg-darkbrown text-light py-3">
+    <!-- ########## ABOUT US ########## -->
+    <section id="about-us" class="bg-white">
+      <div class="container">
+        <h1 class="h1 text-center">About Us</h1>
+        <p class="text-center">
+          It all started with the idea of making a clinic but then everything
+          was destroyed due to our imagination. We needed to restart, we wanted
+          to use everything that we learned, and so the coffee shop occurs.
+          Coffee is one of the three most consumed beverages worldwide and one
+          of the most profitable international commodities. A cup of coffee will
+          give you a will to live for a whole day.
+        </p>
+      </div>
+      <div class="container text-center">
+        <div class="row row-cols-4 row-cols-md-2 row-cols-sm-1">
+          <div class="card column" style="width: 200px; background: #58626c">
+            <img
+              class="card-img-top"
+              src="./img/about/about-1.png"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Marcus David Alo</h4>
+            </div>
+          </div>
+          <div class="card column" style="width: 200px; background: #58626c">
+            <img
+              class="card-img-top"
+              src="./img/about/about-2.png"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Mahdi Atef Adas</h4>
+            </div>
+          </div>
+          <div class="card column" style="width: 200px; background: #58626c">
+            <img
+              class="card-img-top"
+              src="./img/about/about-3.png"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Jared Eiden Belvis</h4>
+            </div>
+          </div>
+          <div class="card column" style="width: 200px; background: #58626c">
+            <img
+              class="card-img-top"
+              src="./img/about/about-4.png"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h4 class="card-title">James Renzhell Cervantes</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ########## FOOTER ########## -->
+    <footer class="#58626c text-light py-3">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img src="path/to/logo.png" alt="Coffee Shop Logo" />
+            <a class="navbar-brand" href="#"
+              ><img src="./img/pngwing.com.png" alt="Logo" style="width: 50px"
+            /></a>
           </div>
           <div class="col-md-4">
-            <p class="m-0 text-center">&copy; 2023</p>
+            <p class="m-0 text-center">
+              Copyright &copy; 2023 VitaMax. All rights reserved.
+            </p>
           </div>
-          <div class="col-md-4">
-            <div class="text-center">
-              <a href="#"><i class="bi bi-facebook mx-2"></i></a>
-              <a href="#"><i class="bi bi-twitter mx-2"></i></a>
-              <a href="#"><i class="bi bi-instagram mx-2"></i></a>
+          <div class="col-md-4 text-end">
+            <div id="footer-socials">
+              <a href="#" class="fb"
+                ><i
+                  class="fab fa-facebook fa-2x mx-2 text-white"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a href="#" class="twt"
+                ><i
+                  class="fab fa-twitter fa-2x mx-2 text-white"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a href="#" class="ig"
+                ><i
+                  class="fab fa-instagram fa-2x mx-2 text-white"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a href="#" class="yt"
+                ><i
+                  class="fab fa-youtube fa-2x mx-2 text-white"
+                  aria-hidden="true"
+                ></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   </body>
 </html>
