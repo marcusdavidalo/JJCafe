@@ -14,11 +14,70 @@
   --bs-card-spacer-y: 0.75rem !important;
   --bs-card-spacer-x: 0.75rem !important;
   --bs-card-border-color: none !important;
+  transition: width 0.3s ease-in-out !important;
+}
+
+.bg-coffee-bean {
+  background: url("../img/index/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
+  background-color: rgb(82, 58, 40, 0.75) !important;
+}
+
+.bg-coffee-bean::before {
+  background-color: rgb(82, 58, 40, 0.75) !important;
+}
+
+.bg-ft-darkbrown {
+  background: rgba(139, 98, 60, 0) !important;
 }
 
 .card-body {
+  height: 24rem;
   border: none !important;
   border-radius: 0.4rem !important;
+  background-color: rgba(93, 62, 30, 0.911) !important;
+  transition: height 0.3s ease-in-out !important;
+}
+
+@media (min-width: 240px) {
+  .card-body {
+    height: 26rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+@media (min-width: 568px) {
+  .card-body {
+    height: 24rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-body {
+    height: 26rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-body {
+    height: 28rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-body {
+    height: 25rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-body {
+    height: 24rem;
+    transition: height 0.3s ease-in-out !important;
+  }
 }
 
 .features-icon {
@@ -28,9 +87,9 @@
 }
 
 .carousel-item img {
-  filter: blur(1.5px);
-  opacity: 0.85;
-  background-color: #523a28;
+  background-color: #523a28 !important;
+  opacity: 0.75 !important;
+  filter: blur(2.5px);
 }
 
 .carousel-item,
