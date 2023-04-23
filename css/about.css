@@ -5,3 +5,15 @@
 .carousel-inner {
   height: 100%;
 }
+
+.card-body {
+  /* min-height: 26rem; */
+  border: none !important;
+  border-radius: 0.4rem !important;
+}
+
+.mvc-icon {
+  background: #f7f7f7;
+  border: #f3f3f3 solid 0.5rem;
+  border-radius: 0.5rem;
+}

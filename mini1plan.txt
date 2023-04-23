@@ -41,7 +41,17 @@ The coffee shop is a hidden gem in the neighborhood. It has a charming vintage d
 =Main=
 - Shop Carousell 3x w/Join Us Button
 - About Mission, Vision, & Values
+
+Our coffee shop's mission is to serve delicious and authentic coffee flavors from around the world, while creating a cozy and friendly atmosphere for our customers. 
+
+Our vision is to become a leading coffee destination in our community, and to support ethical and sustainable practices in the coffee industry.
+
+At our coffee shop, we are committed to three core values: quality, service and sustainability. We strive to offer the best coffee products made from ethically sourced beans and roasted with care. We aim to provide a friendly and welcoming atmosphere for our customers and staff.
+
 - Drinks About
+
+It all started with a passion for coffee and a dream of sharing it with others. That's how We, the founders of NAME, came up with the idea of opening our own coffee shop. We had met at a barista course and instantly hit it off, bonding over their love of roasting, grinding and brewing the perfect cup of joe. They decided to quit their jobs and invest their savings in renting a small space in the downtown area, where they could offer their customers a cozy and friendly atmosphere, along with a variety of high-quality coffee beans from different regions of the world. They worked hard to create a menu that catered to all tastes and preferences, from classic espresso and cappuccino, to cold brew and latte art. Their coffee shop soon became a popular spot for people who wanted to enjoy a relaxing break, a productive work session, or a lively chat with friends. We are proud of what we have achieved and are always looking for ways to improve our service and products. We believe that coffee is more than just a drink, it's a way of life.
+
 
 =Footer=
 - Jobs
