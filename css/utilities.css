@@ -21,12 +21,11 @@ body {
   /* height: 2000px; */
 }
 
-.navbar-brand {
-}
+/* .navbar-brand {
+} */
 
 .nav-logo {
-  background: url("../img/about/pngwing.com.png") no-repeat center
-    center/contain;
+  background: url("../img/pngwing.com.png") no-repeat center center/contain;
   width: 70px;
   height: 70px;
 }
