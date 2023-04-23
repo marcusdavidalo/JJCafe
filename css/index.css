@@ -67,7 +67,7 @@
   color: rgb(156, 98, 44);
 }
 
-.card-body {
+#features .card-body {
   height: 24rem;
   border: none !important;
   border-radius: 0.4rem !important;
@@ -77,6 +77,23 @@
 
 .feature-items {
   z-index: 10;
+}
+
+#testimonials img {
+  height: 128px;
+}
+
+#testimonials .card-body {
+  height: auto;
+  /* border: none !important;
+  border-radius: 0.4rem !important; */
+  background-color: rgba(83, 55, 45, 0.6) !important;
+  /* transition: height 0.3s ease-in-out !important; */
+}
+
+#gallery img {
+  width: 337.2px;
+  height: 250px;
 }
 
 @media (min-width: 240px) {
