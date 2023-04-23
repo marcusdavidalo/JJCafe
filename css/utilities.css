@@ -21,17 +21,49 @@ body {
   /* height: 2000px; */
 }
 
+.navbar-brand {
+}
+
+.nav-logo {
+  background: url("../img/about/pngwing.com.png") no-repeat center
+    center/contain;
+  width: 70px;
+  height: 70px;
+}
+
+.text-darkbrown {
+  color: #52372c !important;
+}
+
+.text-cursive {
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.text-beige {
+  color: #d8c0a9;
+}
+
+.text-cream {
+  color: #f7f7f7 !important;
+}
+
 header {
   background-color: #444444;
 }
 
 .nav-link {
-  font-weight: bolder !important;
+  font-weight: 550 !important;
+  font-size: 1.5rem !important;
 }
 
 .bg-darkbrown {
-  background: #8b623b !important;
+  background: #52372c !important;
 }
+
+.text-logo {
+  color: #8b623b !important;
+}
+
 .bg-grey {
   background: #444 !important;
 }

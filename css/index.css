@@ -18,24 +18,65 @@
 }
 
 .bg-coffee-bean {
-  background: url("../img/index/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
-  background-color: rgb(82, 58, 40, 0.75) !important;
+  position: relative;
+  z-index: 1;
 }
 
 .bg-coffee-bean::before {
-  background-color: rgb(82, 58, 40, 0.75) !important;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
+    url("../img/index/mike-kenneally-TD4DBagg2wE-unsplash.jpg") no-repeat center
+      center/cover;
+  opacity: 0.9;
+  z-index: -1;
 }
 
 .bg-ft-darkbrown {
-  background: rgba(139, 98, 60, 0) !important;
+  background: rgba(129, 62, 0, 0.521) !important;
+}
+
+.card-color {
+  background: rgb(216, 192, 169, 0.95) !important;
+  border-color: rgb(151, 120, 90, 0.75) !important;
+  color: rgb(156, 98, 44);
 }
 
 .card-body {
   height: 24rem;
   border: none !important;
   border-radius: 0.4rem !important;
-  background-color: rgba(93, 62, 30, 0.911) !important;
+  background-color: rgba(83, 55, 45, 0.6) !important;
   transition: height 0.3s ease-in-out !important;
+}
+
+.feature-items {
+  z-index: 10;
 }
 
 @media (min-width: 240px) {
