@@ -71,6 +71,19 @@
   z-index: 10;
 }
 
+#testimonials .card-body {
+  height: auto;
+}
+
+#testimonials .img-holder {
+  width: 200px;
+  height: 200px;
+}
+
+#testimonials .no-bg {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
 /* Gallery */
 #gallery img {
   width: 337.2px;
