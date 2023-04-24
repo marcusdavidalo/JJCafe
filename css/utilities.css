@@ -46,7 +46,7 @@ body {
 }
 
 .text-cursive {
-  font-family: "Cedarville Cursive", cursive;
+  font-family: "Cedarville Cursive", cursive !important;
 }
 
 .text-beige {
