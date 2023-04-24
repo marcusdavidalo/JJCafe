@@ -69,6 +69,10 @@ header {
   transition: width 0.3s ease-in-out !important;
 }
 
+.img-hover:hover img {
+  color: #44444450;
+}
+
 .nav-link {
   font-weight: 550 !important;
   font-size: 1.5rem !important;
