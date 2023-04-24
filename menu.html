@@ -34,7 +34,7 @@
       integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/utilities.css" />
 
     <!-- Favicons -->
     <!-- <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -48,307 +48,171 @@
     <meta name="theme-color" content="#7952b3" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Carousel</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto mb-2 mb-md-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-  
-    <div class="container-fluid">
-      <main>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+    <main>
+      <div class="container">
+        <div class="row" data-masonry='{"percentPosition": true }'>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
               <svg
-                class="bd-placeholder-img"
+                class="bd-placeholder-img card-img-top"
                 width="100%"
-                height="100%"
+                height="200"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-label="Placeholder: Image cap"
                 preserveAspectRatio="xMidYMid slice"
                 role="img"
                 focusable="false"
               >
-                <rect width="100%" height="100%" fill="#777" />
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96" />
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
               </svg>
-  
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <h1>Example headline.</h1>
-                  <p>
-                    Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                    Donec id elit non mi porta gravida at eget metus. Nullam id
-                    dolor id nibh ultricies vehicula ut id elit.
-                  </p>
-                  <p>
-                    <a class="btn btn-lg btn-primary" href="#" role="button"
-                      >Sign up today</a
-                    >
-                  </p>
-                </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
               </div>
             </div>
-            <div class="carousel-item">
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card p-3">
+              <figure class="p-3 mb-0">
+                <blockquote class="blockquote">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer posuere erat a ante.
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer mb-0 text-muted">
+                  Someone famous in
+                  <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
               <svg
-                class="bd-placeholder-img"
+                class="bd-placeholder-img card-img-top"
                 width="100%"
-                height="100%"
+                height="200"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-label="Placeholder: Image cap"
                 preserveAspectRatio="xMidYMid slice"
                 role="img"
                 focusable="false"
               >
-                <rect width="100%" height="100%" fill="#777" />
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96" />
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
               </svg>
-  
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>
-                    Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                    Donec id elit non mi porta gravida at eget metus. Nullam id
-                    dolor id nibh ultricies vehicula ut id elit.
-                  </p>
-                  <p>
-                    <a class="btn btn-lg btn-primary" href="#" role="button"
-                      >Learn more</a
-                    >
-                  </p>
-                </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
               </div>
             </div>
-            <div class="carousel-item">
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card bg-primary text-white text-center p-3">
+              <figure class="mb-0">
+                <blockquote class="blockquote">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer posuere erat.
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer mb-0 text-white">
+                  Someone famous in
+                  <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This card has a regular title and short paragraph of text
+                  below it.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
               <svg
-                class="bd-placeholder-img"
+                class="bd-placeholder-img card-img"
                 width="100%"
-                height="100%"
+                height="260"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-label="Placeholder: Card image"
                 preserveAspectRatio="xMidYMid slice"
                 role="img"
                 focusable="false"
               >
-                <rect width="100%" height="100%" fill="#777" />
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96" />
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text>
               </svg>
-  
-              <div class="container">
-                <div class="carousel-caption text-right">
-                  <h1>One more for good measure.</h1>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card p-3 text-right">
+              <figure class="mb-0">
+                <blockquote class="blockquote">
                   <p>
-                    Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                    Donec id elit non mi porta gravida at eget metus. Nullam id
-                    dolor id nibh ultricies vehicula ut id elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer posuere erat a ante.
                   </p>
-                  <p>
-                    <a class="btn btn-lg btn-primary" href="#" role="button"
-                      >Browse gallery</a
-                    >
-                  </p>
-                </div>
+                </blockquote>
+                <figcaption class="blockquote-footer mb-0 text-muted">
+                  Someone famous in
+                  <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is another card with title and supporting text below.
+                  This card has some additional content to make it slightly
+                  taller overall.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
               </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#myCarousel"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#myCarousel"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-    <div class="container">
-      <div class="row" data-masonry='{"percentPosition": true }'>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card">
-            <svg
-              class="bd-placeholder-img card-img-top"
-              width="100%"
-              height="200"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-label="Placeholder: Image cap"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96" />
-              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-            </svg>
-
-            <div class="card-body">
-              <h5 class="card-title">Card title that wraps to a new line</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card p-3">
-            <figure class="p-3 mb-0">
-              <blockquote class="blockquote">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer posuere erat a ante.
-                </p>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0 text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card">
-            <svg
-              class="bd-placeholder-img card-img-top"
-              width="100%"
-              height="200"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-label="Placeholder: Image cap"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96" />
-              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-            </svg>
-
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This card has supporting text below as a natural lead-in to
-                additional content.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card bg-primary text-white text-center p-3">
-            <figure class="mb-0">
-              <blockquote class="blockquote">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer posuere erat.
-                </p>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0 text-white">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This card has a regular title and short paragraph of text below
-                it.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card">
-            <svg
-              class="bd-placeholder-img card-img"
-              width="100%"
-              height="260"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-label="Placeholder: Card image"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96" />
-              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text>
-            </svg>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card p-3 text-right">
-            <figure class="mb-0">
-              <blockquote class="blockquote">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer posuere erat a ante.
-                </p>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0 text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is another card with title and supporting text below. This
-                card has some additional content to make it slightly taller
-                overall.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
             </div>
           </div>
         </div>
       </div>
-      </div>
-    </div>
-  </div>
-  <footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>
-      &copy; 2017-2020 Company, Inc. &middot;
-      <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
-    </p>
-  </footer>
-</main>
+    </main>
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>
+        &copy; 2017-2020 Company, Inc. &middot;
+        <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+      </p>
+    </footer>
+
     <script
       async
       src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
