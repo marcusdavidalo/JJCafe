@@ -71,6 +71,12 @@
   z-index: 10;
 }
 
+/* Gallery */
+#gallery img {
+  width: 337.2px;
+  height: 250px;
+}
+
 @media (min-width: 240px) {
   .card-body {
     height: 26rem;
