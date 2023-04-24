@@ -20,6 +20,10 @@ a {
   text-decoration: none !important;
 }
 
+.current {
+  color: #d96b47 !important;
+}
+
 body {
   background-color: #d8c0a9;
   /* height: 2000px; */
