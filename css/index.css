@@ -9,14 +9,6 @@
   border: none !important;
 }
 
-.card {
-  border: none !important;
-  --bs-card-spacer-y: 0.75rem !important;
-  --bs-card-spacer-x: 0.75rem !important;
-  --bs-card-border-color: none !important;
-  transition: width 0.3s ease-in-out !important;
-}
-
 .bg-coffee-bean {
   position: relative;
   z-index: 1;
