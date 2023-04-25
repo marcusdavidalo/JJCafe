@@ -46,7 +46,7 @@ body {
 }
 
 .text-cursive {
-  font-family: "Cedarville Cursive", cursive;
+  font-family: "Cedarville Cursive", cursive !important;
 }
 
 .text-beige {
@@ -67,6 +67,10 @@ header {
   --bs-card-spacer-x: 0.75rem !important;
   --bs-card-border-color: none !important;
   transition: width 0.3s ease-in-out !important;
+}
+
+.img-hover:hover img {
+  color: #44444450;
 }
 
 .nav-link {

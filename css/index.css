@@ -43,6 +43,28 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 1)
     ),
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
     url("../img/index/mike-kenneally-TD4DBagg2wE-unsplash.jpg") no-repeat center
       center/cover;
   opacity: 0.9;
@@ -69,6 +91,19 @@
 
 .feature-items {
   z-index: 10;
+}
+
+#testimonials .card-body {
+  height: auto;
+}
+
+#testimonials .img-holder {
+  width: 200px;
+  height: 200px;
+}
+
+#testimonials .no-bg {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 /* Gallery */

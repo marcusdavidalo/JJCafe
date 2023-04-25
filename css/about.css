@@ -10,6 +10,50 @@
   color: white;
 }
 
+.bg-coffee-bean {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-coffee-bean::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
+    url("../img/index/mike-kenneally-TD4DBagg2wE-unsplash.jpg") no-repeat center
+      center/cover;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.bg-ft-darkbrown {
+  background: rgba(129, 62, 0, 0.521) !important;
+}
+
 .mvc-icon {
   background: #f7f7f7;
   border: #f3f3f3 solid 0.5rem;
