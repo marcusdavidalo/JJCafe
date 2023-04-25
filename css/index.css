@@ -112,6 +112,10 @@
   height: 250px;
 }
 
+#gallery .row {
+  --bs-gutter-x: 0 !important;
+}
+
 @media (min-width: 240px) {
   .card-body {
     height: 26rem;
