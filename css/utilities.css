@@ -78,6 +78,16 @@ header {
   font-size: 1.5rem !important;
 }
 
+.navbar {
+  background-color: #d8c0a9;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#hero ~ .navbar-scroll {
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+}
+
 .bg-darkbrown {
   background: #52372c !important;
 }
