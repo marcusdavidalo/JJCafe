@@ -31,13 +31,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/utilities.css" />
-    <link rel="stylesheet" href="../css/order.css" />
+    <link rel="stylesheet" href="../css/order-online.css" />
     <script
       src="https://kit.fontawesome.com/c7b1e1551a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/order-online.js" defer></script>
   </head>
-  <body class="bg-cream">
+  <body class="bg-darkbrown text-white">
     <header>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg bg-beige fixed-top">
@@ -91,146 +92,312 @@
         </div>
       </nav>
     </header>
-    <br /><br /><br /><br />
-    <main id="order">
-      <div class="container">
-        <div class="row justify-content-around">
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/espresso.png"
-              class="card-img-top"
-              alt="..."
-              style="height: 334px"
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
+    <main class="container mt-5 pt-5">
+      <div class="menu-header mt-5 mb-3">
+        <h2> ~ Our Coffee Menu ~ </h2>
+      </div>
+      <div class="row">
+        <!-- Coffee Menu -->
+        <div class="col-md-6">
+          <!-- Espresso -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Espresso 
+              <button id="add-button" type="button" onclick="openModalDrinksHC('Espresso', 160.00)"> + </button></div>
+            <div class="item-description">
+              Strong black coffee made by forcing steam through finely ground
+              coffee beans.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+          <!-- Americano -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Americano 
+              <button id="add-button" type="button" onclick="openModalDrinksHC('Americano', 140.00)"> + </button></div>
+            <div class="item-description">Espresso diluted with hot water.</div>
+            <div class="item-price">₱140.00</div>
+          </div>
+          <!-- Cappuccino -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Cappuccino 
+              <button id="add-button" type="button" onclick="openModalDrinksHC('Cappuccino', 150.00)"> + </button></div>
+            <div class="item-description">
+              Espresso with steamed milk and a layer of frothed milk on top.
+            </div>
+            <div class="item-price">₱150.00</div>
+          </div>
+          <!-- Latte -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Latte 
+              <button id="add-button" type="button" onclick="openModalDrinksHC('Latte', 160.00)"> + </button></div>
+            <div class="item-description">
+              Espresso with steamed milk and a small layer of frothed milk on
+              top.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Macchiato -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Macchiato 
+              <button id="add-button" type="button" onclick="openModalDrinksHC('Iced Coffee', 160.00)"> + </button></div>
+            <div class="item-description">
+              Espresso with a small layer of frothed milk on top.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+          <!-- Flat-White -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Flat-White 
+              <button id="add-button" type="button" onclick="openModalDrinksHC('Cold Brew', 160.00)"> + </button></div>
+            <div class="item-description">
+              Espresso with steamed milk and a small layer of frothed milk on
+              top.
+            </div>
+            <div class="item-price">160.00</div>
+          </div>
+          <!-- Mocha -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Mocha 
+              <button id="add-button" type="button" onclick="openModalDrinksHC('Mocha', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              Espresso with steamed milk, chocolate, and a small layer of
+              frothed milk on top.
+            </div>
+            <div class="item-price">160.00</div>
+          </div>
+          <!-- Frapuccino -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Frappuccino 
+              <button id="add-button" type="button" onclick="openModalDrinksHC('Frappuccino', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              Blended iced coffee with milk, flavored syrups, and whipped cream
+              on top.
+            </div>
+            <div class="item-price">160.00</div>
+          </div>
+        </div>
+        <!-- Cafe Pastry Items -->
+        <div class="col-12">
+          <div class="menu-header mt-5 mb-3">
+            <h2> ~ Our Cafe Pastry Items ~ </h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Cake -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Cake
+              <button id="add-button" type="button" onclick="openModalPastries('Pastries', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              A sweet baked food made from a dough or thick batter usually
+              containing flour and sugar.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+          <!-- Donuts -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Donuts 
+              <button id="add-button" type="button" onclick="openModalPastries('Donuts', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              A fried dough pastry with a hole in the middle.
+            </div>
+            <div class="item-price">160.00</div>
+          </div>
+          <!-- Muffins -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Muffins 
+              <button id="add-button" type="button" onclick="openModalPastries('Muffins', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              A small cake-like bread, typically made with flour, sugar, eggs,
+              and butter.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+          <!-- Cookies -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Cookies 
+              <button id="add-button" type="button" onclick="openModalPastries('Cookies', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              A sweet baked food that is typically small, flat, and round and is
+              made from flour and sugar.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Scones -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Scones 
+              <button id="add-button" type="button" onclick="openModalPastries('Scones', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              A small unsweetened or lightly sweetened biscuit-like cake made
+              from flour, fat, and milk and sometimes having added fruit.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+          <!-- Bagels -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Bagels 
+              <button id="add-button" type="button" onclick="openModalPastries('Bagels', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              A bread roll in the form of a ring, traditionally made with yeast
+              and shaped by hand.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+          <!-- Croissants -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Croissants 
+              <button id="add-button" type="button" onclick="openModalPastries('Croissants', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              A flaky buttery pastry made from layers of yeast-leavened dough.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+          <!-- Cinnamon Rolls -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Cinnamon Rolls 
+              <button id="add-button" type="button" onclick="openModalPastries('Cinnamon Rolls', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              A sweet roll made with cinnamon, sugar, and butter.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+        </div>
+        <!-- Cafe Extras -->
+        <div class="col-12">
+          <div class="menu-header mt-5 mb-3">
+            <h2> ~ Our Cafe Extras ~ </h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Pancakes -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Pancakes 
+              <button id="add-button" type="button" onclick="openModalExtras('Pancakes', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              A flat cake made from a batter and cooked on a hot griddle or
+              frying pan.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+          <!-- Tea -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Tea 
+              <button id="add-button" type="button" onclick="openModalExtras('Tea', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              An aromatic beverage commonly prepared by pouring hot or boiling
+              water over cured or fresh leaves of the Camellia sinensis, an
+              evergreen shrub native to Asia.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Hot Chocolate -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Hot Chocolate 
+              <button id="add-button" type="button" onclick="openModalExtras('Hot Chocolate', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              A heated beverage consisting of shaved chocolate, melted chocolate
+              or cocoa powder, heated milk or water, and usually a sweetener.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+          <!-- Bottled Water -->
+          <div class="menu-item">
+            <div class="d-flex item-name ">Bottled Water 
+              <button id="add-button" type="button" onclick="openModalExtras('Bottled Water', 160.00)"> + </button>
+            </div>
+            <div class="item-description">
+              Water sold in plastic or glass bottles.
+            </div>
+            <div class="item-price">₱160.00</div>
+          </div>
+          </div>
+          <!-- Coffee Beans -->
+          <div class="col-12">
+            <div class="menu-header mt-5 mb-3">
+              <h2> ~ Our Coffee Beans ~ </h2>
             </div>
           </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/americano.png"
-              class="card-img-top"
-              style="height: 334px"
-              alt="..."
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
+          <div class="col-md-6">
+            <!-- Arabica Beans -->
+            <div class="menu-item">
+              <div class="d-flex item-name ">Arabica Beans 
+                <button id="add-button" type="button" onclick="openModalBeans('Arabica Beans', 160.00)"> + </button>
+              </div>
+              <div class="item-description">
+                A species of coffee bean, the most widely grown and widely
+                consumed coffee bean.
+              </div>
+              <div class="item-price">₱160.00</div>
+            </div>
+            <!-- Robusta Beans -->
+            <div class="menu-item">
+              <div class="d-flex item-name ">Robusta Beans 
+                <button id="add-button" type="button" onclick="openModalBeans('Robusta Beans', 160.00)"> + </button>
+              </div>
+              <div class="item-description">
+                A species of coffee bean, the second most widely grown and
+                consumed coffee bean.
+              </div>
+              <div class="item-price">₱160.00</div>
             </div>
           </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/affogato.png"
-              class="card-img-top"
-              alt="..."
-              style="height: 334px"
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
+          <div class="col-md-6">
+            <!-- Liberica Beans -->
+            <div class="menu-item">
+              <div class="d-flex item-name ">Liberica Beans 
+                <button id="add-button" type="button" onclick="openModalBeans('Liberica Beans', 160.00)"> + </button>
+              </div>
+              <div class="item-description">
+                A species of coffee bean, the third most widely grown and
+                consumed coffee bean.
+              </div>
+              <div class="item-price">₱160.00</div>
             </div>
-          </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/cappuccino.png"
-              class="card-img-top"
-              style="height: 334px"
-              alt="..."
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/con-panna.png"
-              class="card-img-top"
-              style="height: 334px"
-              alt="..."
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/cortado.png"
-              class="card-img-top"
-              alt="..."
-              style="height: 334px"
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/doppio.png"
-              class="card-img-top"
-              alt="..."
-              style="height: 334px"
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/flat-white.png"
-              class="card-img-top"
-              style="height: 334px"
-              alt="..."
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/irish-coffee.png"
-              class="card-img-top"
-              style="height: 334px"
-              alt="..."
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/latte.png"
-              class="card-img-top"
-              alt="..."
-              style="height: 334px"
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/macchiato.png"
-              class="card-img-top"
-              style="height: 334px"
-              alt="..."
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 270px; height: 334px">
-            <img
-              src="../img/menu/mocha.png"
-              class="card-img-top"
-              alt="..."
-              style="height: 334px"
-            />
-            <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order Now</a>
+            <!-- Excelsa Beans -->
+            <div class="menu-item">
+              <div class="d-flex item-name ">Excelsa Beans 
+                <button id="add-button" type="button" onclick="openModalBeans('Excelsa Beans', 160.00)"> + </button>
+              </div>
+              <div class="item-description">
+                A species of coffee bean, the fourth most widely grown and
+                consumed coffee bean.
+              </div>
+              <div class="item-price">₱160.00</div>
             </div>
           </div>
         </div>
-      </div>
     </main>
-    <br /><br />
+    <!-- Modal -->
+    <div id="modal" class="modal"></div>
+    <!-- Receipt -->
+    <section id="receipt">
+      <div class="container my-2">
+        <div class="receipt">
+          <h2> ~ Your Ordered Items ~ </h2>
+          <ul class="items-list"></ul>
+          <hr />
+          <p>Total: <span class="total-price">0.00</span></p>
+        </div>
+      </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer id="footer" class="bg-beige text-light py-3">
@@ -239,7 +406,7 @@
           <div class="col-md-4">
             <a class="d-flex justify-content-start align-items-center" href="#">
               <div class="footer-logo"></div>
-              <h2 class="px-2 text-darkbrown">Java Junction</h2></a
+              <h2 class="px-2 text-darkbrown">Java Junction ~ </h2></a
             >
           </div>
           <div class="col-md-4">
