@@ -1,31 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Cedarville Cursive", cursive !important;
-}
-
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #d8c0a9;
-  z-index: 9999;
-  display: none;
-}
-
 a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .current {
-  color: #d96b47 !important;
+  color: #d96b47;
 }
 
 body {
   background-color: #d8c0a9;
+  font-family: "Cedarville Cursive", cursive;
   /* height: 2000px; */
 }
 
@@ -42,7 +25,7 @@ body {
 }
 
 .text-darkbrown {
-  color: #52372c !important;
+  color: #52372c;
 }
 
 .text-beige {
@@ -50,7 +33,7 @@ body {
 }
 
 .text-cream {
-  color: #f7f7f7 !important;
+  color: #f7f7f7;
 }
 
 header {
@@ -58,11 +41,11 @@ header {
 }
 
 .card {
-  border: none !important;
-  --bs-card-spacer-y: 0.75rem !important;
-  --bs-card-spacer-x: 0.75rem !important;
-  --bs-card-border-color: none !important;
-  transition: width 0.3s ease-in-out !important;
+  border: none;
+  --bs-card-spacer-y: 0.75rem;
+  --bs-card-spacer-x: 0.75rem;
+  --bs-card-border-color: none;
+  transition: width 0.3s ease-in-out;
 }
 
 .img-hover:hover img {
@@ -70,8 +53,8 @@ header {
 }
 
 .nav-link {
-  font-weight: 550 !important;
-  font-size: 1.5rem !important;
+  font-weight: 550;
+  font-size: 1.5rem;
 }
 
 .navbar {
@@ -85,43 +68,43 @@ header {
 }
 
 .bg-darkbrown {
-  background: #52372c !important;
+  background: #52372c;
 }
 
 .text-logo {
-  color: #8b623b !important;
+  color: #8b623b;
 }
 
 .bg-grey {
-  background: #444 !important;
+  background: #444;
 }
 
 .bg-beige {
-  background: #d8c0a9 !important;
+  background: #d8c0a9;
 }
 
 .bg-cream {
-  background: #f7f7f7 !important;
+  background: #f7f7f7;
 }
 
 .bg-rust-orange {
-  background: #d96b47 !important;
+  background: #d96b47;
 }
 
 .btn-primary {
-  background: #d96b47 !important;
+  background: #d96b47;
   color: #fff;
-  border: none !important;
-  opacity: none !important;
+  border: none;
+  opacity: none;
 }
 
 a:hover {
-  color: #d96b47 !important;
+  color: #d96b47;
 }
 
 .btn-primary:hover {
-  background-color: #d15536 !important;
-  color: #fff !important;
+  background-color: #d15536;
+  color: #fff;
 }
 
 #features {
@@ -129,9 +112,9 @@ a:hover {
 }
 
 .img-fit {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .carousel-item {
@@ -139,7 +122,7 @@ a:hover {
 }
 
 a:hover {
-  color: #d96b47 !important;
+  color: #d96b47;
 }
 
 .carousel-caption {
@@ -160,11 +143,11 @@ a:hover {
 }
 
 .fa-facebook:hover {
-  color: #3b5998 !important;
+  color: #3b5998;
 }
 
 .fa-twitter:hover {
-  color: #00acee !important;
+  color: #00acee;
 }
 
 .fa-instagram:hover {
@@ -175,14 +158,14 @@ a:hover {
     #d62976,
     #962fbf,
     #4f5bd5
-  ) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  color: transparent !important;
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .fa-youtube:hover {
-  color: #c4302b !important;
+  color: #c4302b;
 }
 
 @media (min-width: 200px) {

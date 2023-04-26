@@ -1,12 +1,13 @@
+/* Needs to be arranged */
 .feat-prods {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
-  background-color: #d8c0a9 !important;
+  background-color: #d8c0a9;
 }
 
 .features {
-  border: none !important;
+  border: none;
 }
 
 .bg-coffee-bean {
@@ -72,21 +73,21 @@
 }
 
 .bg-ft-darkbrown {
-  background: rgba(129, 62, 0, 0.521) !important;
+  background: rgba(129, 62, 0, 0.521);
 }
 
 .card-color {
-  background: rgb(216, 192, 169, 0.95) !important;
-  border-color: rgb(151, 120, 90, 0.75) !important;
+  background: rgb(216, 192, 169, 0.95);
+  border-color: rgb(151, 120, 90, 0.75);
   color: rgb(156, 98, 44);
 }
 
 .card-body {
   height: 24rem;
-  border: none !important;
-  border-radius: 0.4rem !important;
-  background-color: rgba(83, 55, 45, 0.6) !important;
-  transition: height 0.3s ease-in-out !important;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: rgba(83, 55, 45, 0.6);
+  transition: height 0.3s ease-in-out;
 }
 
 .feature-items {
@@ -103,7 +104,7 @@
 }
 
 #testimonials .no-bg {
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Gallery */
@@ -113,48 +114,48 @@
 }
 
 #gallery .row {
-  --bs-gutter-x: 0 !important;
+  --bs-gutter-x: 0;
 }
 
 @media (min-width: 240px) {
   .card-body {
     height: 26rem;
-    transition: height 0.3s ease-in-out !important;
+    transition: height 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 568px) {
   .card-body {
     height: 24rem;
-    transition: height 0.3s ease-in-out !important;
+    transition: height 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 768px) {
   .card-body {
     height: 26rem;
-    transition: height 0.3s ease-in-out !important;
+    transition: height 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 992px) {
   .card-body {
     height: 28rem;
-    transition: height 0.3s ease-in-out !important;
+    transition: height 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 1200px) {
   .card-body {
     height: 25rem;
-    transition: height 0.3s ease-in-out !important;
+    transition: height 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 1400px) {
   .card-body {
     height: 24rem;
-    transition: height 0.3s ease-in-out !important;
+    transition: height 0.3s ease-in-out;
   }
 }
 
@@ -165,8 +166,8 @@
 }
 
 .carousel-item img {
-  background-color: #523a28 !important;
-  opacity: 0.75 !important;
+  background-color: #523a28;
+  opacity: 0.75;
   filter: blur(2.5px);
 }
 
