@@ -99,7 +99,7 @@ header {
 }
 
 a:hover {
-  color: #d96b47;
+  color: #d96b47 !important;
 }
 
 .btn-primary:hover {

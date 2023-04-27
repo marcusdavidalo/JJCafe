@@ -69,8 +69,8 @@ function updateCart() {
   });
 }
 
+// General Modals
 // Open Modal Hot & Cold Drinks JS
-
 function openModalDrinksHC(itemName, itemPrice) {
   const modal = document.getElementById("modal");
   modal.innerHTML = `
@@ -180,6 +180,33 @@ function openModalExtras(itemName, itemPrice) {
         </form>
       </div>
     `;
+  modal.style.display = "block";
+
+  // Get the close button element and add a click event listener
+  const closeButton = modal.querySelector(".close");
+  closeButton.addEventListener("click", closeModal);
+}
+
+// Specific Modals
+// Cake Modal JS
+function openModalCake(itemName, itemPrice) {
+  const modal = document.getElementById("modal");
+  modal.innerHTML = `
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h3>Change ${itemName} to your liking</h3>
+          <form onsubmit="addItem('${itemName}', ${itemPrice}); closeModal(); return false;">
+            <label for="${itemName}-size">Size:</label>
+            <select id="${itemName}-size" name="${itemName}-size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+            <br>
+            <input type="submit" value="Add to receipt">
+          </form>
+        </div>
+      `;
   modal.style.display = "block";
 
   // Get the close button element and add a click event listener
