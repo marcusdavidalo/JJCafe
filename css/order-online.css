@@ -1,8 +1,17 @@
-h2 {
+h3 {
   font-size: 3rem;
   font-weight: 900;
   color: #f7f7f7;
   margin-bottom: 0.5rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: #83503c5b;
 }
 
 .item-name {
@@ -11,6 +20,15 @@ h2 {
   color: #d96b47;
   margin-bottom: 0.5rem;
   justify-content: space-between;
+  width: 100%;
+}
+
+.item-name span {
+  cursor: pointer;
+}
+
+.card-body {
+  background: rgba(77, 44, 32, 0.871);
 }
 
 .item-description {
@@ -40,7 +58,7 @@ h2 {
 }
 
 /* Modal CSS */
-.modal {
+/* .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -50,14 +68,14 @@ h2 {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-}
+} */
 
 .modal-content {
   background-color: #6d2d14de;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #d8c0a9;
-  width: 25%;
+  width: 100%;
 }
 
 .close {

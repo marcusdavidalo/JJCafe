@@ -90,8 +90,65 @@
   transition: height 0.3s ease-in-out;
 }
 
+.card-title {
+  color: #d96b47;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
 .feature-items {
   z-index: 10;
+}
+
+.features-icon {
+  background: #d8c0a9;
+  border: #d8c0a9 solid 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#online-ordering {
+  background: url("../img/icons/features/online-ordering.ico") no-repeat center
+    center/contain;
+  background-color: #fff3e8af;
+  border-radius: 25%;
+  width: 175px;
+  height: 175px;
+}
+
+#fresh-coffee {
+  background: url("../img/icons/features/fresh-coffee.ico") no-repeat center
+    center/contain;
+  background-color: #fff3e8af;
+  border-radius: 25%;
+  width: 175px;
+  height: 175px;
+}
+
+#coffee-ambience {
+  background: url("../img/icons/features/coffee-ambience.ico") no-repeat center
+    center/contain;
+  background-color: #fff3e8af;
+  border-radius: 25%;
+  width: 175px;
+  height: 175px;
+}
+
+#free-wifi {
+  background: url("../img/icons/features/free-wifi.ico") no-repeat center
+    center/contain;
+  background-color: #fff3e8af;
+  border-radius: 25%;
+  width: 175px;
+  height: 175px;
+}
+
+#snacks {
+  background: url("../img/icons/features/snacks.ico") no-repeat center
+    center/contain;
+  background-color: #fff3e8af;
+  border-radius: 25%;
+  width: 175px;
+  height: 175px;
 }
 
 #testimonials .card-body {
@@ -119,50 +176,44 @@
 
 @media (min-width: 240px) {
   .card-body {
-    height: 26rem;
+    height: 27.5rem;
     transition: height 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 568px) {
   .card-body {
-    height: 24rem;
+    height: 26rem;
     transition: height 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 768px) {
   .card-body {
-    height: 26rem;
+    height: 27.5rem;
     transition: height 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 992px) {
   .card-body {
-    height: 28rem;
+    height: 31rem;
     transition: height 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 1200px) {
   .card-body {
-    height: 25rem;
+    height: 27.5rem;
     transition: height 0.3s ease-in-out;
   }
 }
 
 @media (min-width: 1400px) {
   .card-body {
-    height: 24rem;
+    height: 28rem;
     transition: height 0.3s ease-in-out;
   }
-}
-
-.features-icon {
-  background: #f7f7f7;
-  border: #f3f3f3 solid 0.5rem;
-  border-radius: 0.5rem;
 }
 
 .carousel-item img {
