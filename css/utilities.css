@@ -19,6 +19,15 @@ body {
   /* height: 2000px; */
 }
 
+.mainbg {
+  background: url("../img/mainbg.png") no-repeat center center/cover;
+  position: fixed;
+  width: 125vw;
+  height: 125vh;
+  filter: blur(0.4rem);
+  z-index: -1;
+}
+
 .nav-logo {
   background: url("../img/pngwing.com.png") no-repeat center center/contain;
   width: 70px;
