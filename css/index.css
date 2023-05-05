@@ -198,7 +198,7 @@
 
 @media (min-width: 240px) {
   .card-body {
-    height: 27.5rem;
+    height: 29rem;
     transition: height 0.3s ease-in-out;
   }
 }
