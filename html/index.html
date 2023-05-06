@@ -162,6 +162,7 @@
           </div>
           <!-- Carousel Content -->
           <div class="carousel-inner carousel-fade d-flex align-items-center">
+            <div class="bg-grey"></div>
             <!-- Carousel Item 1 -->
             <div class="carousel-item active">
               <img
@@ -169,7 +170,7 @@
                 class="img-fit"
                 alt="A Table of Coffee Drinks"
               />
-              <div class="carousel-caption">
+              <div class="carousel-caption" data-aos="fade-in">
                 <h1 class="text">Welcome</h1>
                 <p class="text">
                   Welcome to our coffee shop! Enjoy freshly brewed coffee,
@@ -223,6 +224,15 @@
         </div>
       </div>
     </section>
+    <div class="btntotop">
+      <button
+        id="back-to-top-button"
+        onclick="scrollToTop()"
+        style="display: block"
+      >
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
+    </div>
     <!-- Features -->
     <section id="features" class="py-5 bg-coffee-bean" data-aos="fade-in">
       <div class="container justify-">
@@ -238,7 +248,7 @@
                   class="d-flex features-icon card-color justify-content-center"
                   data-aos="zoom-in-up"
                 >
-                  <div id="online-ordering"></div>
+                  <div id="online-ordering" data-aos="flip-right"></div>
                 </div>
                 <div class="text-cream">
                   <h4 class="card-title mt-3 my-1">Online Ordering</h4>
@@ -259,7 +269,7 @@
                   class="d-flex features-icon card-color justify-content-center"
                   data-aos="zoom-in-up"
                 >
-                  <div id="fresh-coffee"></div>
+                  <div id="fresh-coffee" data-aos="flip-down"></div>
                 </div>
                 <div class="text-cream">
                   <h4 class="card-title mt-3 my-1">Freshly Brewed Coffee</h4>
@@ -282,7 +292,7 @@
                   class="d-flex features-icon card-color justify-content-center"
                   data-aos="zoom-in-up"
                 >
-                  <div id="coffee-ambience"></div>
+                  <div id="coffee-ambience" data-aos="flip-left"></div>
                 </div>
                 <div class="text-cream">
                   <h4 class="card-title mt-3 my-1">Cozy Ambience</h4>
@@ -305,7 +315,7 @@
                   class="d-flex features-icon card-color justify-content-center"
                   data-aos="zoom-in-up"
                 >
-                  <div id="free-wifi"></div>
+                  <div id="free-wifi" data-aos="flip-right"></div>
                 </div>
                 <div class="text-cream">
                   <h4 class="card-title mt-3 my-1">Free Wi-Fi</h4>
@@ -327,7 +337,7 @@
                   class="d-flex features-icon card-color justify-content-center"
                   data-aos="zoom-in-up"
                 >
-                  <div id="snacks"></div>
+                  <div id="snacks" data-aos="flip-left"></div>
                 </div>
                 <div class="text-cream">
                   <h4 class="card-title mt-3 my-1">Delicious Snacks</h4>
@@ -347,7 +357,7 @@
     <!-- Testimonials -->
     <section id="testimonials" class="mb-5 mt-3">
       <div class="container">
-        <h1 class="text-center text-white" data-aos="flip-top">
+        <h1 class="text-center text-white" data-aos="flip-up">
           Customer Reviews
         </h1>
       </div>
@@ -496,7 +506,7 @@
               src="../img/index/gallery/espresso.jpg"
               alt="1"
               title="Espresso"
-              class="img-fluid"
+              class="img-fit"
             />
           </div>
           <div class="col">
@@ -504,7 +514,7 @@
               src="../img/index/gallery/Macchiato.webp"
               alt="2"
               title="Macchiato"
-              class="img-fluid"
+              class="img-fit"
             />
           </div>
           <div class="col img-hover">
@@ -512,7 +522,7 @@
               src="../img/index/gallery/mocha.jpg"
               alt="3"
               title="Mocha"
-              class="img-fluid"
+              class="img-fit"
             />
           </div>
           <div class="col">
@@ -520,7 +530,7 @@
               src="../img/index/gallery/americano.jpg"
               alt="4"
               title="Americano"
-              class="img-fluid"
+              class="img-fit"
             />
           </div>
           <div class="col">
@@ -528,7 +538,7 @@
               src="../img/index/gallery/cappuccino.jpg"
               alt="5"
               title="Cappuccino"
-              class="img-fluid"
+              class="img-fit"
             />
           </div>
           <div class="col">
@@ -536,7 +546,7 @@
               src="../img/index/gallery/flat-white.jpg"
               alt="6"
               title="Flat White"
-              class="img-fluid"
+              class="img-fit"
             />
           </div>
           <div class="col">
@@ -544,7 +554,7 @@
               src="../img/index/gallery/glace.jpg"
               alt="7"
               title="Glace"
-              class="img-fluid"
+              class="img-fit"
             />
           </div>
           <div class="col">
@@ -552,7 +562,7 @@
               src="../img/index/gallery/Frappe.webp"
               alt="8"
               title="Frappe"
-              class="img-fluid"
+              class="img-fit"
             />
           </div>
         </div>
@@ -611,8 +621,12 @@
     ></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init(); //AOS
-    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.min.js"
+      integrity="sha512-fYjSocDD6ctuQ1QGIo9+Nn9Oc4mfau2IiE8Ki1FyMV4OcESUt81FMqmhsZe9zWZ6g6NdczrEMAos1GlLLAipWg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/utilities.js"></script>
   </body>
 </html>
