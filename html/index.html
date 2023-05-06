@@ -11,12 +11,14 @@
       rel="canonical"
       href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/"
     />
+    <!-- Bootstrap core CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -24,6 +26,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,6 +37,9 @@
       href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
       rel="stylesheet"
     />
+    <!-- Google Fonts -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS -->
     <link rel="stylesheet" href="../css/utilities.css" />
     <link rel="stylesheet" href="../css/index.css" />
     <script
@@ -101,7 +107,7 @@
       </nav>
     </header>
     <!-- Carosel Showcase -->
-    <section id="hero" class="bg-darkbrown mt-5">
+    <section id="hero" class="bg-darkbrown">
       <div
         id="slider1"
         class="carousel slide"
@@ -218,7 +224,7 @@
       </div>
     </section>
     <!-- Features -->
-    <section id="features" class="py-5 bg-coffee-bean">
+    <section id="features" class="py-5 bg-coffee-bean" data-aos="fade-in">
       <div class="container justify-">
         <div
           id="feature-items"
@@ -226,10 +232,11 @@
         >
           <!-- Cell 1 -->
           <div class="col">
-            <div class="card text-center bg-ft-darkbrown">
+            <div class="card text-center bg-ft-darkbrown" data-aos="fade-right">
               <div class="card-body text-white">
                 <div
                   class="d-flex features-icon card-color justify-content-center"
+                  data-aos="zoom-in-up"
                 >
                   <div id="online-ordering"></div>
                 </div>
@@ -246,10 +253,11 @@
           </div>
           <!-- Cell 2 -->
           <div class="col">
-            <div class="card text-center bg-ft-darkbrown">
+            <div class="card text-center bg-ft-darkbrown" data-aos="fade-down">
               <div class="card-body text-white">
                 <div
                   class="d-flex features-icon card-color justify-content-center"
+                  data-aos="zoom-in-up"
                 >
                   <div id="fresh-coffee"></div>
                 </div>
@@ -268,10 +276,11 @@
           </div>
           <!-- Cell 3 -->
           <div class="col">
-            <div class="card text-center bg-ft-darkbrown">
+            <div class="card text-center bg-ft-darkbrown" data-aos="fade-left">
               <div class="card-body text-white">
                 <div
                   class="d-flex features-icon card-color justify-content-center"
+                  data-aos="zoom-in-up"
                 >
                   <div id="coffee-ambience"></div>
                 </div>
@@ -290,10 +299,11 @@
           </div>
           <!-- Cell 4 -->
           <div class="col">
-            <div class="card text-center bg-ft-darkbrown">
+            <div class="card text-center bg-ft-darkbrown" data-aos="fade-right">
               <div class="card-body text-white">
                 <div
                   class="d-flex features-icon card-color justify-content-center"
+                  data-aos="zoom-in-up"
                 >
                   <div id="free-wifi"></div>
                 </div>
@@ -311,10 +321,11 @@
           </div>
           <!-- Cell 5 -->
           <div class="col">
-            <div class="card text-center bg-ft-darkbrown">
+            <div class="card text-center bg-ft-darkbrown" data-aos="fade-left">
               <div class="card-body text-white">
                 <div
                   class="d-flex features-icon card-color justify-content-center"
+                  data-aos="zoom-in-up"
                 >
                   <div id="snacks"></div>
                 </div>
@@ -336,12 +347,14 @@
     <!-- Testimonials -->
     <section id="testimonials" class="mb-5 mt-3">
       <div class="container">
-        <h1 class="text-center text-white">Customer Reviews</h1>
+        <h1 class="text-center text-white" data-aos="flip-top">
+          Customer Reviews
+        </h1>
       </div>
       <div class="container">
         <div class="align-items-center">
           <!-- Testimonial 1 -->
-          <div class="card bg-transparent mb-3">
+          <div class="card bg-transparent mb-3" data-aos="flip-down">
             <div
               class="row align-items-center justify-content-around p-2 g-0 bg-ft-darkbrown rounded-5"
             >
@@ -350,6 +363,7 @@
                   src="../img/index/testimonials/testimonial-1.jpg"
                   class="img-fluid img-fit rounded-circle"
                   alt="Testimonial 1 profile image"
+                  data-aos="fade-right"
                 />
               </div>
               <div class="col-md-8">
@@ -383,7 +397,7 @@
             </div>
           </div>
           <!-- Testimonial 2 -->
-          <div class="card bg-transparent mb-3">
+          <div class="card bg-transparent mb-3" data-aos="flip-down">
             <div
               class="row align-items-center justify-content-around p-2 g-0 bg-ft-darkbrown rounded-5"
             >
@@ -392,6 +406,7 @@
                   src="../img/index/testimonials/testimonial-2.jpg"
                   class="img-fluid img-fit rounded-circle"
                   alt="Testimonial 2 profile image"
+                  data-aos="fade-right"
                 />
               </div>
               <div class="col-md-8">
@@ -425,7 +440,7 @@
             </div>
           </div>
           <!-- Testimonial 3 -->
-          <div class="card bg-transparent mb-3">
+          <div class="card bg-transparent mb-3" data-aos="flip-down">
             <div
               class="row align-items-center justify-content-around p-2 g-0 bg-ft-darkbrown rounded-5"
             >
@@ -434,6 +449,7 @@
                   src="../img/index/testimonials/testimonial-3.jpg"
                   class="img-fluid img-fit rounded-circle"
                   alt="Testimonial 3 profile image"
+                  data-aos="fade-right"
                 />
               </div>
               <div class="col-md-8">
@@ -594,5 +610,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(); //AOS
+    </script>
   </body>
 </html>
