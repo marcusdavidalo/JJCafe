@@ -13,14 +13,11 @@ p {
   color: #d96b47;
 }
 
-[data-aos] {
-  overflow-x: clip;
-}
-
 html,
 body {
   /* background-color: #d8c0a9; */
   font-family: "Grand Hotel", cursive;
+  overflow-x: clip;
   /* height: 2000px; */
 }
 
@@ -43,9 +40,9 @@ body {
   height: 70px;
 }
 
-.navwidth {
+/* .navwidth {
   min-width: 100%;
-}
+} */
 
 .footer-logo {
   background: url("../img/pngwing.com.png") no-repeat center center/contain;
