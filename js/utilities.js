@@ -91,3 +91,16 @@ function activateKonamiCode() {
     });
   }
 }
+
+// Prevent scrolling to left and right on mobile
+$(document).ready(function () {
+  $("body").bind("touchmove", function (e) {
+    e.preventDefault();
+  });
+}); // to disable scrolling - add this to the end of the function
+// touchmove event is fired every time the user touches the screen and moves their finger. We are preventing the default action of this event, which is scrolling the page.
+
+//remove any extra space from the left and right of the screen
+$(document).ready(function () {
+  $("body").css("overflow-x", "hidden");
+});

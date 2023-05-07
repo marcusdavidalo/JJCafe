@@ -136,6 +136,10 @@ header {
   background: #d96b47;
 }
 
+.transparent {
+  background-color: transparent !important;
+}
+
 .btn-primary {
   background: #d96b47;
   color: #fff;
