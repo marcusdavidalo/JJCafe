@@ -47,7 +47,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="bg-cream">
+  <body>
     <div class="mainbg"></div>
     <!-- Carosel Showcase -->
     <section id="hero" class="bg-darkbrown">
@@ -178,13 +178,16 @@
     </div>
     <header class="nav d-flex flex-column">
       <!-- Navbar -->
-      <nav class="navbar navbar-scroll navbar-expand-lg" data-aos="flip-up">
+      <nav class="navbar navbar-scroll navbar-expand-lg">
+        <!-- Do not use AOS on the navbar, it adds extra width to the whole page even with overflow-x: hidden on body -->
         <div class="container">
           <a
             class="navbar-brand d-flex justify-content-center align-items-center"
             href="#"
-            ><div class="nav-logo"></div>
-            <h1 class="px-2 text-darkbrown">Java Junction</h1></a
+            ><div class="nav-logo" data-aos="flip-up"></div>
+            <h1 class="px-2 text-darkbrown" data-aos="flip-up">
+              Java Junction
+            </h1></a
           >
           <button
             class="navbar-toggler"
@@ -203,20 +206,34 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item current">
-                <a class="nav-link mx-2 current" href="index.html">Home</a>
+                <a
+                  class="nav-link mx-2 current"
+                  data-aos="flip-up"
+                  href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item current">
-                <a class="nav-link mx-2 text-darkbrown" href="locations.html"
+                <a
+                  class="nav-link mx-2 text-darkbrown"
+                  data-aos="flip-up"
+                  href="locations.html"
                   >Locations</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2 text-darkbrown" href="about.html"
+                <a
+                  class="nav-link mx-2 text-darkbrown"
+                  data-aos="flip-up"
+                  href="about.html"
                   >About</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2 text-darkbrown" href="contact.html"
+                <a
+                  class="nav-link mx-2 text-darkbrown"
+                  data-aos="flip-up"
+                  href="contact.html"
                   >Contact</a
                 >
               </li>
@@ -224,6 +241,7 @@
                 <a
                   href="order-online.html"
                   class="nav-link btn-primary btn-maxwidth px-3 py-2 mx-3 text-lg rounded-2"
+                  data-aos="flip-up"
                   >Order Here</a
                 >
               </li>

@@ -1,7 +1,7 @@
 // Initialize AOS
 AOS.init({
   duration: 500,
-  once: true,
+  once: false,
 });
 
 // Get the button
