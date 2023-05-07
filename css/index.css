@@ -6,6 +6,12 @@
   background-color: #d8c0a9;
 }
 
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
 .features {
   border: none;
 }
