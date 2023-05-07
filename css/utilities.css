@@ -94,8 +94,8 @@ header {
 
 #back-to-top-button {
   position: fixed;
-  /* bottom: 20px;
-  right: 20px; */
+  bottom: 1rem;
+  right: 1rem;
   display: none;
   background-color: #d96b47;
   color: white;
@@ -212,6 +212,10 @@ a:hover {
 
 .fa-youtube:hover {
   color: #c4302b;
+}
+
+.swal2-container {
+  color: #fff !important;
 }
 
 @media (min-width: 200px) {

@@ -24,7 +24,7 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// KONAMI CODE EASTER EGG
+// KONAMI CODE EASTER EGG - little fun thing I added to the website
 //Konami code sequence
 const konamiCode = [
   "ArrowUp",
@@ -62,6 +62,32 @@ document.addEventListener("keydown", function (event) {
 
 // define the function that should run when the code is entered
 function activateKonamiCode() {
-  // replace this with the code that you want to run
-  console.log("Konami code entered!");
+  // check if the Konami code has already been entered
+  if (localStorage.getItem("konamiCodeEntered")) {
+    // show a different alert if the code has already been entered
+    Swal.fire({
+      title: "You have already found the Secret Code!",
+      text: "You can only find it once :(",
+      background: "#f7f7f7",
+      icon: "warning",
+      confirmButtonText: "OK",
+      confirmButtonColor: "#d96b47",
+      zIndex: 999999,
+    });
+  } else {
+    // set a value in local storage to indicate that the Konami code has been entered
+    localStorage.setItem("konamiCodeEntered", true);
+
+    // show the original alert if the code hasn't been entered before
+    Swal.fire({
+      title: "You have found a Secret Code!",
+      text: "Enjoy a cup of coffee on us!",
+      background: "#f7f7f7",
+      imageUrl: "../img/pngwing.com.png",
+      imageWidth: 400,
+      imageHeight: 400,
+      imageAlt: "Custom image",
+      zIndex: 999999,
+    });
+  }
 }
