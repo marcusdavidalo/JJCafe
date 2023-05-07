@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
   position: relative;
   width: 100vw;
+  z-index: -10;
   /* height: 2000px; */
 }
 
