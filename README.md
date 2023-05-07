@@ -1,14 +1,20 @@
-# Java Junction Cafe
+# Java Junction Cafe (TEST)
 
+Welcome to the Java Junction Cafe (TEST) website repository!
 
-Welcome to the Java Junction Cafe website repository!
-
-This website is hosted on Netlify and can be accessed at [javajunctioncafetest.netlify.app](https://javajunctioncafetest.netlify.app).
+This website is hosted on Netlify and can be accessed at [javajunctioncafetest.netlify.app](https://javajunctioncafetest.netlify.app/html/).
 
 ## About
 
-Java Junction Cafe is a cozy cafe that serves delicious coffee and food. Our website provides information about our menu, location, and hours of operation.
+Java Junction Cafe (TEST) is a cozy cafe that serves delicious coffee and food. Our website provides information about our menu, location, and hours of operation.
 
-## Contributing
+## The Team
 
-If you would like to contribute to this repository, please feel free to submit a pull request or open an issue.
+### This project was made by the following people
+
+- Marcus David Alo
+- Mahdi Atef Adas
+- Jared Eiden Belvis
+- James Renzhell Cervantes
+
+## ↑ ↑ ↓ ↓ ← → ← → **b** **a**
