@@ -13,9 +13,13 @@ p {
   color: #d96b47;
 }
 
+html,
 body {
   background-color: #d8c0a9;
   font-family: "Grand Hotel", cursive;
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
   /* height: 2000px; */
 }
 
