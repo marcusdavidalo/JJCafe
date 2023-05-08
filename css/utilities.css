@@ -46,6 +46,10 @@ body {
   overflow-x: clip;
 }
 
+#arrowbounce {
+  z-index: 9999;
+}
+
 .nav {
   position: sticky;
   top: 0;
@@ -167,6 +171,10 @@ header {
 
 a:hover {
   color: #d96b47 !important;
+}
+
+.overlay {
+  pointer-events: none;
 }
 
 .btn-primary:hover {
